@@ -6,7 +6,7 @@
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="js/jquery.circliful.min.js"></script>
+<script src="js/jquery.circliful.js"></script>
 
 <style>
 body {
@@ -22,7 +22,11 @@ body {
 
 <div id="myStat" data-dimension="250" data-text="35%" data-info="New Clients" data-width="30" data-fontsize="38" data-percent="35" data-fgcolor="#61a9dc" data-bgcolor="#eee" data-fill="#ddd"></div>
 
-<div id="myStathalf2" data-dimension="250" data-text="35" data-info="New Clients" data-width="30" data-fontsize="38" data-percent="35" data-fgcolor="#7ea568" data-bgcolor="#eee" data-type="half" data-icon="fa-task"></div>
+
+<div id="myStathalf2" data-dimension="250" data-text="35" data-info="完成任务" data-width="30" data-fontsize="38" data-percent="35" data-fgcolor="#7ea568" data-bgcolor="#eee" data-type="halfType2" data-icon="fa-task"></div>
+
+<div id="myStathalf4" data-dimension="250" data-text="35" data-info="完成任务" data-width="30" data-fontsize="38" data-percent="35" data-fgcolor="#7ea568" data-bgcolor="#eee" data-type="half" data-icon="fa-task"></div>
+
 
 <div id="myStat2" data-dimension="250" data-text="35%" data-info="New Clients" data-width="30" data-fontsize="38" data-percent="35" data-fgcolor="#61a9dc" data-bgcolor="#eee"></div>
 
@@ -36,7 +40,8 @@ body {
 $( document ).ready(function() {
         $('#myStathalf').circliful();
 		$('#myStat').circliful();
-		$('#myStathalf2').circliful();
+        $('#myStathalf2').circliful();
+        $('#myStathalf4').circliful();
 		$('#myStat2').circliful();
     $('#myStat3').circliful();
     $('#myStat4').circliful();

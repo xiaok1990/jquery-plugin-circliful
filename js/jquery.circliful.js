@@ -55,7 +55,12 @@
 
                     if (type == 'half') {
                         addCircleText(obj, 'circle-text-half', (customSettingsObj.dimension / 1.45));
-                    } else {
+
+                        // 插件修改    By xiaok
+                    } else if(type == 'halfType2'){
+                        addCircleText(obj, 'circle-text-half', (customSettingsObj.dimension / 1.05));
+                        // 插件修改END    By xiaok  
+                    }else{
                         addCircleText(obj, 'circle-text', customSettingsObj.dimension);
                     }
                 } else {
@@ -139,6 +144,15 @@
                     endAngle = 3.13;
                     circ = Math.PI;
                     quart = Math.PI / 0.996;
+                }
+                        // 插件修改    By xiaok
+                if (type == 'halfType2') {
+                    
+                    startAngle = 2.3 * Math.PI;
+                    endAngle = 2.30;
+                    circ = Math.PI;
+                    quart = 1.3*Math.PI;
+                        // 插件修改END    By xiaok
                 }
             }
             

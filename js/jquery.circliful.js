@@ -150,7 +150,7 @@
                     
                     startAngle = 2.3 * Math.PI;
                     endAngle = 2.30;
-                    circ = Math.PI;
+                    circ = 1.6*Math.PI;
                     quart = 1.3*Math.PI;
                         // 插件修改END    By xiaok
                 }
